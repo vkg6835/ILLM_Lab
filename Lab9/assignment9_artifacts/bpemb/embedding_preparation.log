@@ -1,0 +1,2 @@
+Corpus corpus_1's weight should be given. We default it to 1 for you.
+{"src": {"vocab_size": 9624, "pretrained_types": 9614, "training_token_vocabulary_coverage": 1.0, "training_token_pretrained_coverage": 1.0, "training_unknown_token_rate": 0.002447445100816577, "aligned_shape": [9624, 128]}, "tgt": {"vocab_size": 9544, "pretrained_types": 9535, "training_token_vocabulary_coverage": 1.0, "training_token_pretrained_coverage": 1.0, "training_unknown_token_rate": 0.003867217221912274, "aligned_shape": [9544, 128]}}

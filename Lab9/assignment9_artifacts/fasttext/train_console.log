@@ -1,0 +1,256 @@
+[2026-11-07 18:54:11,219 INFO] Missing transforms field for corpus_1 data, set to default: [].
+[2026-11-07 18:54:11,219 WARNING] Corpus corpus_1's weight should be given. We default it to 1 for you.
+[2026-11-07 18:54:11,219 INFO] Missing transforms field for valid data, set to default: [].
+[2026-11-07 18:54:11,220 INFO] Parsed 2 corpora from -data.
+[2026-11-07 18:54:11,220 INFO] Get special vocabs from Transforms: {'src': [], 'tgt': []}.
+[2026-11-07 18:54:11,543 INFO] The first 10 tokens of the vocabs are:['<unk>', '<blank>', '<s>', '</s>', '.', 'the', ',', 'of', 'and', 'is']
+[2026-11-07 18:54:11,543 INFO] The decoder start token is: <s>
+[2026-11-07 18:54:11,543 INFO] Building model...
+[2026-11-07 18:54:12,451 INFO] Switching model to float32 for amp/apex_amp
+[2026-11-07 18:54:12,451 INFO] Non quantized layer compute is fp32
+[2026-11-07 18:54:12,545 INFO] NMTModel(
+  (encoder): TransformerEncoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(12008, 128, padding_idx=1)
+        )
+        (pe): PositionalEncoding()
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (transformer): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=128, out_features=128, bias=False)
+          (linear_values): Linear(in_features=128, out_features=128, bias=False)
+          (linear_query): Linear(in_features=128, out_features=128, bias=False)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=128, out_features=128, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=128, out_features=512, bias=False)
+          (w_2): Linear(in_features=512, out_features=128, bias=False)
+          (layer_norm): LayerNorm((128,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((128,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (layer_norm): LayerNorm((128,), eps=1e-06, elementwise_affine=True)
+  )
+  (decoder): TransformerDecoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(12008, 128, padding_idx=1)
+        )
+        (pe): PositionalEncoding()
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (layer_norm): LayerNorm((128,), eps=1e-06, elementwise_affine=True)
+    (transformer_layers): ModuleList(
+      (0-1): 2 x TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=128, out_features=128, bias=False)
+          (linear_values): Linear(in_features=128, out_features=128, bias=False)
+          (linear_query): Linear(in_features=128, out_features=128, bias=False)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=128, out_features=128, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=128, out_features=512, bias=False)
+          (w_2): Linear(in_features=512, out_features=128, bias=False)
+          (layer_norm): LayerNorm((128,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((128,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=128, out_features=128, bias=False)
+          (linear_values): Linear(in_features=128, out_features=128, bias=False)
+          (linear_query): Linear(in_features=128, out_features=128, bias=False)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=128, out_features=128, bias=False)
+        )
+        (layer_norm_2): LayerNorm((128,), eps=1e-06, elementwise_affine=True)
+      )
+    )
+  )
+  (generator): Linear(in_features=128, out_features=12008, bias=True)
+)
+[2026-11-07 18:54:12,546 INFO] encoder: 1931520
+[2026-11-07 18:54:12,546 INFO] decoder: 3612136
+[2026-11-07 18:54:12,546 INFO] * number of parameters: 5543656
+[2026-11-07 18:54:12,546 INFO] Trainable parameters = {'torch.float32': 5543656, 'torch.float16': 0, 'torch.uint8': 0, 'torch.int8': 0}
+[2026-11-07 18:54:12,546 INFO] Non trainable parameters = {'torch.float32': 0, 'torch.float16': 0, 'torch.uint8': 0, 'torch.int8': 0}
+[2026-11-07 18:54:12,546 INFO]  * src vocab size = 12008
+[2026-11-07 18:54:12,546 INFO]  * tgt vocab size = 12008
+[2026-11-07 18:54:13,199 INFO] Weighted corpora loaded so far:
+			* corpus_1: 1
+[2026-11-07 18:54:13,199 INFO] Starting training on GPU: [0]
+[2026-11-07 18:54:13,199 INFO] Start training loop and validate every 1000 steps...
+[2026-11-07 18:54:13,199 INFO] Scoring with: None
+c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab8\runtime\python312\Lib\site-packages\onmt\modules\multi_headed_attn.py:656: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at ..\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:263.)
+  attn_output = scaled_dot_product_attention(
+[2026-11-07 18:54:17,872 INFO] Step 100/ 8000; acc: 4.6; ppl: 8411.9; xent: 9.0; lr: 0.00016; sents:    2861; bsz:  583/ 664/29; 12465/14217 tok/s;      5 sec;
+[2026-11-07 18:54:22,033 INFO] Step 200/ 8000; acc: 6.9; ppl: 2037.8; xent: 7.6; lr: 0.00032; sents:    2950; bsz:  554/ 636/30; 13308/15280 tok/s;      9 sec;
+[2026-11-07 18:54:26,139 INFO] Step 300/ 8000; acc: 9.5; ppl: 911.1; xent: 6.8; lr: 0.00048; sents:    2978; bsz:  592/ 672/30; 14427/16362 tok/s;     13 sec;
+[2026-11-07 18:54:30,272 INFO] Step 400/ 8000; acc: 15.1; ppl: 641.9; xent: 6.5; lr: 0.00063; sents:    2877; bsz:  569/ 654/29; 13783/15822 tok/s;     17 sec;
+[2026-11-07 18:54:34,338 INFO] Step 500/ 8000; acc: 18.9; ppl: 486.4; xent: 6.2; lr: 0.00079; sents:    2983; bsz:  592/ 670/30; 14565/16491 tok/s;     21 sec;
+[2026-11-07 18:54:38,460 INFO] Step 600/ 8000; acc: 20.5; ppl: 405.2; xent: 6.0; lr: 0.00072; sents:    2922; bsz:  577/ 650/29; 13994/15771 tok/s;     25 sec;
+[2026-11-07 18:54:42,691 INFO] Step 700/ 8000; acc: 21.6; ppl: 358.4; xent: 5.9; lr: 0.00067; sents:    3037; bsz:  595/ 677/30; 14063/15992 tok/s;     29 sec;
+[2026-11-07 18:54:46,635 INFO] Step 800/ 8000; acc: 22.5; ppl: 320.4; xent: 5.8; lr: 0.00062; sents:    2974; bsz:  599/ 675/30; 15195/17120 tok/s;     33 sec;
+[2026-11-07 18:54:50,571 INFO] Step 900/ 8000; acc: 23.5; ppl: 292.5; xent: 5.7; lr: 0.00059; sents:    2899; bsz:  572/ 653/29; 14525/16599 tok/s;     37 sec;
+[2026-11-07 18:54:54,851 INFO] Step 1000/ 8000; acc: 24.3; ppl: 271.3; xent: 5.6; lr: 0.00056; sents:    2820; bsz:  587/ 660/28; 13728/15434 tok/s;     42 sec;
+[2026-11-07 18:55:04,874 INFO] valid stats calculation
+                           took: 10.021766424179077 s.
+[2026-11-07 18:55:04,874 INFO] Train perplexity: 666.451
+[2026-11-07 18:55:04,874 INFO] Train accuracy: 16.7772
+[2026-11-07 18:55:04,874 INFO] Sentences processed: 29301
+[2026-11-07 18:55:04,874 INFO] Average bsz:  582/ 661/29
+[2026-11-07 18:55:04,874 INFO] Validation perplexity: 243.97
+[2026-11-07 18:55:04,874 INFO] Validation accuracy: 25.8223
+[2026-11-07 18:55:04,878 INFO] Saving checkpoint c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab9\assignment9_artifacts\fasttext\models\mt_step_1000.pt
+[2026-11-07 18:55:09,812 INFO] Step 1100/ 8000; acc: 25.6; ppl: 247.8; xent: 5.5; lr: 0.00053; sents:    3131; bsz:  583/ 670/31; 3898/4476 tok/s;     57 sec;
+[2026-11-07 18:55:14,398 INFO] Step 1200/ 8000; acc: 25.7; ppl: 243.5; xent: 5.5; lr: 0.00051; sents:    2929; bsz:  598/ 666/29; 13030/14532 tok/s;     61 sec;
+[2026-11-07 18:55:18,681 INFO] Step 1300/ 8000; acc: 26.7; ppl: 219.6; xent: 5.4; lr: 0.00049; sents:    2854; bsz:  566/ 645/29; 13219/15067 tok/s;     65 sec;
+[2026-11-07 18:55:22,742 INFO] Step 1400/ 8000; acc: 26.8; ppl: 223.5; xent: 5.4; lr: 0.00047; sents:    3027; bsz:  589/ 665/30; 14516/16372 tok/s;     70 sec;
+[2026-11-07 18:55:26,797 INFO] Step 1500/ 8000; acc: 27.2; ppl: 209.8; xent: 5.3; lr: 0.00046; sents:    2834; bsz:  579/ 657/28; 14283/16206 tok/s;     74 sec;
+[2026-11-07 18:55:31,137 INFO] Step 1600/ 8000; acc: 27.3; ppl: 205.3; xent: 5.3; lr: 0.00044; sents:    2800; bsz:  565/ 641/28; 13013/14771 tok/s;     78 sec;
+[2026-11-07 18:55:35,466 INFO] Step 1700/ 8000; acc: 27.6; ppl: 196.2; xent: 5.3; lr: 0.00043; sents:    2841; bsz:  585/ 665/28; 13521/15358 tok/s;     82 sec;
+[2026-11-07 18:55:40,222 INFO] Step 1800/ 8000; acc: 28.3; ppl: 190.0; xent: 5.2; lr: 0.00042; sents:    2913; bsz:  586/ 666/29; 12323/13999 tok/s;     87 sec;
+[2026-11-07 18:55:45,886 INFO] Step 1900/ 8000; acc: 28.5; ppl: 185.3; xent: 5.2; lr: 0.00041; sents:    2888; bsz:  566/ 639/29; 9985/11280 tok/s;     93 sec;
+[2026-11-07 18:55:50,509 INFO] Step 2000/ 8000; acc: 28.8; ppl: 177.6; xent: 5.2; lr: 0.00040; sents:    3037; bsz:  611/ 690/30; 13213/14918 tok/s;     97 sec;
+[2026-11-07 18:56:01,854 INFO] valid stats calculation
+                           took: 11.343827962875366 s.
+[2026-11-07 18:56:01,854 INFO] Train perplexity: 373.036
+[2026-11-07 18:56:01,854 INFO] Train accuracy: 22.0145
+[2026-11-07 18:56:01,854 INFO] Sentences processed: 58555
+[2026-11-07 18:56:01,854 INFO] Average bsz:  582/ 661/29
+[2026-11-07 18:56:01,854 INFO] Validation perplexity: 157.902
+[2026-11-07 18:56:01,854 INFO] Validation accuracy: 30.4965
+[2026-11-07 18:56:01,859 INFO] Saving checkpoint c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab9\assignment9_artifacts\fasttext\models\mt_step_2000.pt
+[2026-11-07 18:56:07,218 INFO] Step 2100/ 8000; acc: 29.1; ppl: 174.6; xent: 5.2; lr: 0.00039; sents:    2885; bsz:  576/ 657/29; 3448/3933 tok/s;    114 sec;
+[2026-11-07 18:56:11,803 INFO] Step 2200/ 8000; acc: 29.6; ppl: 168.5; xent: 5.1; lr: 0.00038; sents:    2892; bsz:  576/ 656/29; 12567/14305 tok/s;    119 sec;
+[2026-11-07 18:56:16,443 INFO] Step 2300/ 8000; acc: 29.7; ppl: 170.1; xent: 5.1; lr: 0.00037; sents:    2995; bsz:  599/ 673/30; 12903/14515 tok/s;    123 sec;
+[2026-11-07 18:56:22,250 INFO] Step 2400/ 8000; acc: 30.2; ppl: 158.0; xent: 5.1; lr: 0.00036; sents:    2934; bsz:  588/ 669/29; 10130/11527 tok/s;    129 sec;
+[2026-11-07 18:56:26,421 INFO] Step 2500/ 8000; acc: 30.3; ppl: 156.7; xent: 5.1; lr: 0.00035; sents:    3061; bsz:  588/ 663/31; 14104/15894 tok/s;    133 sec;
+[2026-11-07 18:56:30,822 INFO] Step 2600/ 8000; acc: 30.8; ppl: 151.4; xent: 5.0; lr: 0.00035; sents:    2865; bsz:  561/ 641/29; 12753/14567 tok/s;    138 sec;
+[2026-11-07 18:56:34,942 INFO] Step 2700/ 8000; acc: 31.0; ppl: 150.9; xent: 5.0; lr: 0.00034; sents:    2923; bsz:  577/ 654/29; 13996/15877 tok/s;    142 sec;
+[2026-11-07 18:56:39,226 INFO] Step 2800/ 8000; acc: 30.8; ppl: 151.7; xent: 5.0; lr: 0.00033; sents:    2895; bsz:  580/ 658/29; 13546/15365 tok/s;    146 sec;
+[2026-11-07 18:56:43,611 INFO] Step 2900/ 8000; acc: 30.7; ppl: 149.5; xent: 5.0; lr: 0.00033; sents:    2910; bsz:  583/ 662/29; 13289/15089 tok/s;    150 sec;
+[2026-11-07 18:56:47,999 INFO] Step 3000/ 8000; acc: 31.3; ppl: 143.7; xent: 5.0; lr: 0.00032; sents:    3015; bsz:  574/ 656/30; 13091/14948 tok/s;    155 sec;
+[2026-11-07 18:56:58,327 INFO] valid stats calculation
+                           took: 10.326765537261963 s.
+[2026-11-07 18:56:58,328 INFO] Train perplexity: 279.847
+[2026-11-07 18:56:58,328 INFO] Train accuracy: 24.7798
+[2026-11-07 18:56:58,328 INFO] Sentences processed: 87930
+[2026-11-07 18:56:58,328 INFO] Average bsz:  582/ 660/29
+[2026-11-07 18:56:58,328 INFO] Validation perplexity: 127.17
+[2026-11-07 18:56:58,328 INFO] Validation accuracy: 32.8832
+[2026-11-07 18:56:58,332 INFO] Saving checkpoint c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab9\assignment9_artifacts\fasttext\models\mt_step_3000.pt
+[2026-11-07 18:57:02,490 INFO] Step 3100/ 8000; acc: 31.3; ppl: 143.1; xent: 5.0; lr: 0.00032; sents:    2974; bsz:  598/ 673/30; 4126/4644 tok/s;    169 sec;
+[2026-11-07 18:57:06,578 INFO] Step 3200/ 8000; acc: 31.6; ppl: 137.9; xent: 4.9; lr: 0.00031; sents:    2945; bsz:  582/ 659/29; 14234/16123 tok/s;    173 sec;
+[2026-11-07 18:57:10,596 INFO] Step 3300/ 8000; acc: 31.9; ppl: 136.4; xent: 4.9; lr: 0.00031; sents:    2894; bsz:  579/ 659/29; 14421/16397 tok/s;    177 sec;
+[2026-11-07 18:57:14,563 INFO] Step 3400/ 8000; acc: 32.1; ppl: 133.3; xent: 4.9; lr: 0.00030; sents:    2871; bsz:  583/ 657/29; 14687/16555 tok/s;    181 sec;
+[2026-11-07 18:57:19,379 INFO] Step 3500/ 8000; acc: 32.1; ppl: 130.5; xent: 4.9; lr: 0.00030; sents:    2977; bsz:  596/ 677/30; 12383/14052 tok/s;    186 sec;
+[2026-11-07 18:57:23,546 INFO] Step 3600/ 8000; acc: 32.2; ppl: 130.3; xent: 4.9; lr: 0.00029; sents:    2768; bsz:  566/ 650/28; 13581/15594 tok/s;    190 sec;
+[2026-11-07 18:57:27,860 INFO] Step 3700/ 8000; acc: 32.2; ppl: 131.8; xent: 4.9; lr: 0.00029; sents:    3185; bsz:  612/ 690/32; 14192/15988 tok/s;    195 sec;
+[2026-11-07 18:57:32,274 INFO] Step 3800/ 8000; acc: 32.9; ppl: 126.0; xent: 4.8; lr: 0.00029; sents:    2917; bsz:  573/ 660/29; 12990/14953 tok/s;    199 sec;
+[2026-11-07 18:57:36,520 INFO] Step 3900/ 8000; acc: 32.1; ppl: 129.8; xent: 4.9; lr: 0.00028; sents:    2853; bsz:  577/ 644/29; 13598/15183 tok/s;    203 sec;
+[2026-11-07 18:57:40,870 INFO] Step 4000/ 8000; acc: 32.9; ppl: 124.5; xent: 4.8; lr: 0.00028; sents:    3060; bsz:  588/ 670/31; 13524/15396 tok/s;    208 sec;
+[2026-11-07 18:57:50,581 INFO] valid stats calculation
+                           took: 9.710752248764038 s.
+[2026-11-07 18:57:50,581 INFO] Train perplexity: 231.845
+[2026-11-07 18:57:50,581 INFO] Train accuracy: 26.6258
+[2026-11-07 18:57:50,581 INFO] Sentences processed: 117374
+[2026-11-07 18:57:50,581 INFO] Average bsz:  583/ 661/29
+[2026-11-07 18:57:50,581 INFO] Validation perplexity: 109.617
+[2026-11-07 18:57:50,581 INFO] Validation accuracy: 34.6343
+[2026-11-07 18:57:50,586 INFO] Saving checkpoint c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab9\assignment9_artifacts\fasttext\models\mt_step_4000.pt
+[2026-11-07 18:57:54,719 INFO] Step 4100/ 8000; acc: 32.6; ppl: 123.6; xent: 4.8; lr: 0.00028; sents:    2883; bsz:  582/ 663/29; 4202/4787 tok/s;    222 sec;
+[2026-11-07 18:57:59,142 INFO] Step 4200/ 8000; acc: 32.9; ppl: 121.3; xent: 4.8; lr: 0.00027; sents:    2905; bsz:  579/ 665/29; 13095/15025 tok/s;    226 sec;
+[2026-11-07 18:58:03,638 INFO] Step 4300/ 8000; acc: 33.2; ppl: 118.8; xent: 4.8; lr: 0.00027; sents:    2901; bsz:  568/ 649/29; 12636/14432 tok/s;    230 sec;
+[2026-11-07 18:58:04,889 INFO] Weighted corpora loaded so far:
+			* corpus_1: 2
+[2026-11-07 18:58:08,159 INFO] Step 4400/ 8000; acc: 33.0; ppl: 120.1; xent: 4.8; lr: 0.00027; sents:    3135; bsz:  620/ 699/31; 13717/15456 tok/s;    235 sec;
+[2026-11-07 18:58:12,613 INFO] Step 4500/ 8000; acc: 33.5; ppl: 115.4; xent: 4.7; lr: 0.00026; sents:    3049; bsz:  580/ 663/30; 13024/14880 tok/s;    239 sec;
+[2026-11-07 18:58:16,658 INFO] Step 4600/ 8000; acc: 33.1; ppl: 120.7; xent: 4.8; lr: 0.00026; sents:    2825; bsz:  571/ 647/28; 14110/15992 tok/s;    243 sec;
+[2026-11-07 18:58:21,062 INFO] Step 4700/ 8000; acc: 33.4; ppl: 115.6; xent: 4.8; lr: 0.00026; sents:    2912; bsz:  602/ 684/29; 13664/15531 tok/s;    248 sec;
+[2026-11-07 18:58:25,520 INFO] Step 4800/ 8000; acc: 34.1; ppl: 112.8; xent: 4.7; lr: 0.00026; sents:    2988; bsz:  573/ 652/30; 12855/14633 tok/s;    252 sec;
+[2026-11-07 18:58:29,880 INFO] Step 4900/ 8000; acc: 33.6; ppl: 113.1; xent: 4.7; lr: 0.00025; sents:    2941; bsz:  572/ 657/29; 13118/15061 tok/s;    257 sec;
+[2026-11-07 18:58:34,023 INFO] Step 5000/ 8000; acc: 34.1; ppl: 108.8; xent: 4.7; lr: 0.00025; sents:    2998; bsz:  590/ 664/30; 14249/16039 tok/s;    261 sec;
+[2026-11-07 18:58:43,798 INFO] valid stats calculation
+                           took: 9.773914337158203 s.
+[2026-11-07 18:58:43,799 INFO] Train perplexity: 202.083
+[2026-11-07 18:58:43,799 INFO] Train accuracy: 27.9749
+[2026-11-07 18:58:43,799 INFO] Sentences processed: 146911
+[2026-11-07 18:58:43,799 INFO] Average bsz:  583/ 662/29
+[2026-11-07 18:58:43,799 INFO] Validation perplexity: 97.6868
+[2026-11-07 18:58:43,799 INFO] Validation accuracy: 35.9489
+[2026-11-07 18:58:43,803 INFO] Saving checkpoint c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab9\assignment9_artifacts\fasttext\models\mt_step_5000.pt
+[2026-11-07 18:58:48,297 INFO] Step 5100/ 8000; acc: 34.6; ppl: 106.9; xent: 4.7; lr: 0.00025; sents:    2943; bsz:  578/ 655/29; 4046/4587 tok/s;    275 sec;
+[2026-11-07 18:58:52,307 INFO] Step 5200/ 8000; acc: 34.2; ppl: 109.2; xent: 4.7; lr: 0.00025; sents:    2959; bsz:  585/ 664/30; 14579/16553 tok/s;    279 sec;
+[2026-11-07 18:58:56,237 INFO] Step 5300/ 8000; acc: 34.3; ppl: 104.2; xent: 4.6; lr: 0.00024; sents:    2835; bsz:  583/ 660/28; 14829/16792 tok/s;    283 sec;
+[2026-11-07 18:59:00,326 INFO] Step 5400/ 8000; acc: 34.8; ppl: 102.2; xent: 4.6; lr: 0.00024; sents:    2950; bsz:  591/ 667/30; 14453/16305 tok/s;    287 sec;
+[2026-11-07 18:59:04,453 INFO] Step 5500/ 8000; acc: 35.3; ppl: 100.5; xent: 4.6; lr: 0.00024; sents:    2981; bsz:  580/ 657/30; 14066/15915 tok/s;    291 sec;
+[2026-11-07 18:59:08,295 INFO] Step 5600/ 8000; acc: 35.3; ppl:  98.7; xent: 4.6; lr: 0.00024; sents:    2904; bsz:  590/ 671/29; 15353/17475 tok/s;    295 sec;
+[2026-11-07 18:59:12,388 INFO] Step 5700/ 8000; acc: 35.4; ppl:  98.1; xent: 4.6; lr: 0.00023; sents:    3030; bsz:  586/ 661/30; 14325/16148 tok/s;    299 sec;
+[2026-11-07 18:59:16,511 INFO] Step 5800/ 8000; acc: 35.0; ppl: 101.1; xent: 4.6; lr: 0.00023; sents:    2928; bsz:  589/ 667/29; 14294/16169 tok/s;    303 sec;
+[2026-11-07 18:59:20,430 INFO] Step 5900/ 8000; acc: 34.9; ppl: 100.2; xent: 4.6; lr: 0.00023; sents:    2740; bsz:  572/ 649/27; 14592/16560 tok/s;    307 sec;
+[2026-11-07 18:59:24,384 INFO] Step 6000/ 8000; acc: 35.6; ppl:  97.7; xent: 4.6; lr: 0.00023; sents:    2906; bsz:  564/ 641/29; 14256/16206 tok/s;    311 sec;
+[2026-11-07 18:59:34,469 INFO] valid stats calculation
+                           took: 10.084612846374512 s.
+[2026-11-07 18:59:34,470 INFO] Train perplexity: 180.335
+[2026-11-07 18:59:34,470 INFO] Train accuracy: 29.1338
+[2026-11-07 18:59:34,470 INFO] Sentences processed: 176087
+[2026-11-07 18:59:34,470 INFO] Average bsz:  583/ 661/29
+[2026-11-07 18:59:34,470 INFO] Validation perplexity: 89.5716
+[2026-11-07 18:59:34,470 INFO] Validation accuracy: 36.9854
+[2026-11-07 18:59:34,474 INFO] Saving checkpoint c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab9\assignment9_artifacts\fasttext\models\mt_step_6000.pt
+[2026-11-07 18:59:38,811 INFO] Step 6100/ 8000; acc: 35.7; ppl:  97.4; xent: 4.6; lr: 0.00023; sents:    2945; bsz:  600/ 679/29; 4156/4709 tok/s;    326 sec;
+[2026-11-07 18:59:42,914 INFO] Step 6200/ 8000; acc: 35.4; ppl:  97.8; xent: 4.6; lr: 0.00022; sents:    2730; bsz:  577/ 656/27; 14064/15976 tok/s;    330 sec;
+[2026-11-07 18:59:47,185 INFO] Step 6300/ 8000; acc: 35.6; ppl:  96.7; xent: 4.6; lr: 0.00022; sents:    2989; bsz:  563/ 638/30; 13192/14931 tok/s;    334 sec;
+[2026-11-07 18:59:51,156 INFO] Step 6400/ 8000; acc: 35.9; ppl:  94.3; xent: 4.5; lr: 0.00022; sents:    3003; bsz:  588/ 669/30; 14805/16857 tok/s;    338 sec;
+[2026-11-07 18:59:55,380 INFO] Step 6500/ 8000; acc: 35.4; ppl:  96.0; xent: 4.6; lr: 0.00022; sents:    2843; bsz:  596/ 672/28; 14121/15920 tok/s;    342 sec;
+[2026-11-07 18:59:59,417 INFO] Step 6600/ 8000; acc: 36.0; ppl:  93.9; xent: 4.5; lr: 0.00022; sents:    3026; bsz:  587/ 669/30; 14545/16573 tok/s;    346 sec;
+[2026-11-07 19:00:03,393 INFO] Step 6700/ 8000; acc: 35.9; ppl:  93.6; xent: 4.5; lr: 0.00022; sents:    2929; bsz:  581/ 658/29; 14620/16562 tok/s;    350 sec;
+[2026-11-07 19:00:07,431 INFO] Step 6800/ 8000; acc: 36.3; ppl:  90.5; xent: 4.5; lr: 0.00021; sents:    2946; bsz:  569/ 643/29; 14082/15930 tok/s;    354 sec;
+[2026-11-07 19:00:11,663 INFO] Step 6900/ 8000; acc: 36.7; ppl:  88.2; xent: 4.5; lr: 0.00021; sents:    3088; bsz:  603/ 679/31; 14239/16043 tok/s;    358 sec;
+[2026-11-07 19:00:15,768 INFO] Step 7000/ 8000; acc: 36.5; ppl:  89.5; xent: 4.5; lr: 0.00021; sents:    2765; bsz:  561/ 642/28; 13666/15632 tok/s;    363 sec;
+[2026-11-07 19:00:27,036 INFO] valid stats calculation
+                           took: 11.267207145690918 s.
+[2026-11-07 19:00:27,037 INFO] Train perplexity: 164.257
+[2026-11-07 19:00:27,037 INFO] Train accuracy: 30.1053
+[2026-11-07 19:00:27,037 INFO] Sentences processed: 205351
+[2026-11-07 19:00:27,037 INFO] Average bsz:  583/ 661/29
+[2026-11-07 19:00:27,037 INFO] Validation perplexity: 82.7234
+[2026-11-07 19:00:27,037 INFO] Validation accuracy: 37.9904
+[2026-11-07 19:00:27,040 INFO] Saving checkpoint c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab9\assignment9_artifacts\fasttext\models\mt_step_7000.pt
+[2026-11-07 19:00:31,228 INFO] Step 7100/ 8000; acc: 36.5; ppl:  91.5; xent: 4.5; lr: 0.00021; sents:    2877; bsz:  579/ 654/29; 3745/4229 tok/s;    378 sec;
+[2026-11-07 19:00:35,334 INFO] Step 7200/ 8000; acc: 36.1; ppl:  91.2; xent: 4.5; lr: 0.00021; sents:    2943; bsz:  573/ 655/29; 13965/15949 tok/s;    382 sec;
+[2026-11-07 19:00:39,455 INFO] Step 7300/ 8000; acc: 36.1; ppl:  90.4; xent: 4.5; lr: 0.00021; sents:    2979; bsz:  591/ 670/30; 14335/16253 tok/s;    386 sec;
+[2026-11-07 19:00:43,539 INFO] Step 7400/ 8000; acc: 36.8; ppl:  88.3; xent: 4.5; lr: 0.00021; sents:    2874; bsz:  567/ 648/29; 13897/15865 tok/s;    390 sec;
+[2026-11-07 19:00:47,496 INFO] Step 7500/ 8000; acc: 36.7; ppl:  87.1; xent: 4.5; lr: 0.00020; sents:    3128; bsz:  602/ 677/31; 15208/17111 tok/s;    394 sec;
+[2026-11-07 19:00:51,548 INFO] Step 7600/ 8000; acc: 36.5; ppl:  88.6; xent: 4.5; lr: 0.00020; sents:    2869; bsz:  585/ 666/29; 14436/16432 tok/s;    398 sec;
+[2026-11-07 19:00:55,502 INFO] Step 7700/ 8000; acc: 37.0; ppl:  85.9; xent: 4.5; lr: 0.00020; sents:    2828; bsz:  567/ 645/28; 14344/16323 tok/s;    402 sec;
+[2026-11-07 19:00:59,490 INFO] Step 7800/ 8000; acc: 37.0; ppl:  85.7; xent: 4.5; lr: 0.00020; sents:    2935; bsz:  596/ 670/29; 14951/16792 tok/s;    406 sec;
+[2026-11-07 19:01:03,745 INFO] Step 7900/ 8000; acc: 37.0; ppl:  83.6; xent: 4.4; lr: 0.00020; sents:    2934; bsz:  590/ 667/29; 13861/15671 tok/s;    411 sec;
+[2026-11-07 19:01:07,739 INFO] Step 8000/ 8000; acc: 36.8; ppl:  85.9; xent: 4.5; lr: 0.00020; sents:    2973; bsz:  585/ 667/30; 14640/16707 tok/s;    415 sec;
+[2026-11-07 19:01:16,544 INFO] valid stats calculation
+                           took: 8.8043212890625 s.
+[2026-11-07 19:01:16,544 INFO] Train perplexity: 151.874
+[2026-11-07 19:01:16,544 INFO] Train accuracy: 30.9245
+[2026-11-07 19:01:16,544 INFO] Sentences processed: 234691
+[2026-11-07 19:01:16,544 INFO] Average bsz:  583/ 661/29
+[2026-11-07 19:01:16,544 INFO] Validation perplexity: 77.8451
+[2026-11-07 19:01:16,544 INFO] Validation accuracy: 38.8209
+[2026-11-07 19:01:16,548 INFO] Saving checkpoint c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab9\assignment9_artifacts\fasttext\models\mt_step_8000.pt

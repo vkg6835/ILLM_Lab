@@ -1,0 +1,5 @@
+{
+  "best_epoch": 1,
+  "validation_macro_f1": 0.9061763726562044,
+  "training_seconds": 488.2436879000161
+}

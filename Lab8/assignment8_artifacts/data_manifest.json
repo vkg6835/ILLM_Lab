@@ -1,0 +1,40 @@
+{
+  "dataset": "ai4bharat/BPCC",
+  "requested_revision": "5bde309374f21c39e7c3d505f28ae11f58f2a220",
+  "file": "ilci/hin_Deva.tsv",
+  "raw_sha256": "d4f768bcc12f58e648c3d5105744b3e61ba6fd29e563394e4c4ff26788a43bce",
+  "language_direction": "English -> Hindi",
+  "seed": 42,
+  "length_definition": "English whitespace words before subwords",
+  "bins": {
+    "bin1": "L <= 10",
+    "bin2": "11 <= L <= 19",
+    "bin3": "20 <= L <= 29",
+    "bin4": "L >= 30"
+  },
+  "boundary_20": "assigned to bin3",
+  "cleaning_audit": {
+    "input_rows": 165650,
+    "header_rows": 1,
+    "malformed_rows": 1,
+    "wrong_language_rows": 0,
+    "empty_rows": 0,
+    "duplicate_pairs": 0,
+    "repeated_sources": 4190,
+    "repeated_targets": 703,
+    "retained_pairs": 160755
+  },
+  "split_sizes": {
+    "train": 128605,
+    "validation": 16075,
+    "test": 16075
+  },
+  "split_sha256": {
+    "train.en": "40619fa5054d55187ab62944559f0a0d250538567245cd76c4470b3624d35481",
+    "train.hi": "e48706ea7a0d8086e289ef56b243d7c4d8b203545dcd52282d5e75ecebe29329",
+    "validation.en": "9d19c33f7d1fc26bd8a4c9f02009866c3cab77ab95af374ae2938ba0dee4a687",
+    "validation.hi": "a564f97445073a48d11d7bbd84d826f8fd5c337c15ffe229436119d52c581349",
+    "test.en": "1b715537bf6f3e48e9d61578c8e82c3dab116b1cb6087f336911d6515a0a6e1e",
+    "test.hi": "0ee03bbbc8d5004f6ee23b705e0adb3cf160991f6c0284ac66b0eba4e31c68e7"
+  }
+}

@@ -1,0 +1,32 @@
+# Local environments, installed packages, and editor state
+.venv*/
+venv/
+runtime/
+node_modules/
+.vscode/
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+
+# Temporary files and credentials
+tmp/
+.env
+.env.*
+!.env.example
+
+# Downloaded datasets and generated computational resources
+data/
+!/Lab7/Data/
+!/Lab7/Data/**
+raw/
+models/
+wiki_vectors/
+*_cache/
+features/
+assignment3_artifacts/train_1m.txt
+assignment3_artifacts/development_1000.txt
+assignment3_artifacts/test_1000.txt
+*.pt
+*.pth
+*.safetensors
+*.whl

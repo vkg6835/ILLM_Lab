@@ -1,0 +1,8 @@
+{
+  "checkpoint": "mt_step_5000.pt",
+  "step": 5000,
+  "validation_perplexity": 207.697,
+  "criterion": "minimum validation perplexity; no test selection",
+  "checkpoint_sha256": "3d26360c803a5a9bd4795ef060e5270b8483cd15d7ae351cd22e12d20f3f8a4a",
+  "experiment_fingerprint": "d551b7bd9b317d39be030acbf3dc35b7fac68aa1bd7ab4b356dfce0fbd74769d"
+}

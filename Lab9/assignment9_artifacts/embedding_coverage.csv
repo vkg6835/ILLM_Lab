@@ -1,0 +1,5 @@
+variant,side,vocab_size,pretrained_types,training_token_vocabulary_coverage,training_token_pretrained_coverage,training_unknown_token_rate,aligned_shape
+fasttext,src,12008,8797,0.9329369512887116,0.8327813668327462,0.06706304871128843,"[12008, 128]"
+fasttext,tgt,12008,10910,0.9274488137796555,0.896491171054057,0.0725511862203445,"[12008, 128]"
+bpemb,src,9624,9614,1.0,1.0,0.002447445100816577,"[9624, 128]"
+bpemb,tgt,9544,9535,1.0,1.0,0.003867217221912274,"[9544, 128]"

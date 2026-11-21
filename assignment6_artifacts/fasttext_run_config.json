@@ -1,0 +1,14 @@
+{
+  "train_path": "C:\\Users\\Vishal Gautam\\Desktop\\ILLM Lab\\ILLM Assign\\assignment6_artifacts\\data\\fasttext_train.txt",
+  "validation_path": "C:\\Users\\Vishal Gautam\\Desktop\\ILLM Lab\\ILLM Assign\\assignment6_artifacts\\data\\fasttext_validation_queries.txt",
+  "test_path": "C:\\Users\\Vishal Gautam\\Desktop\\ILLM Lab\\ILLM Assign\\assignment6_artifacts\\data\\fasttext_test_queries.txt",
+  "pretrained_path": "C:\\Users\\Vishal Gautam\\Desktop\\ILLM Lab\\ILLM Assign\\assignment6_artifacts\\wiki_vectors\\fasttext_training_word_vectors.vec",
+  "model_path": "C:\\Users\\Vishal Gautam\\Desktop\\ILLM Lab\\ILLM Assign\\assignment6_artifacts\\models\\fasttext_classifier.bin",
+  "predictions_path": "C:\\Users\\Vishal Gautam\\Desktop\\ILLM Lab\\ILLM Assign\\assignment6_artifacts\\fasttext_predictions.json",
+  "epochs": 25,
+  "lr": 0.5,
+  "dimension": 300,
+  "bucket": 100000,
+  "signature": "70c74611c2e01ce04f6492b56111e99bacacf40d1e648e604fcecd862a8b0ff1",
+  "force_retrain": false
+}

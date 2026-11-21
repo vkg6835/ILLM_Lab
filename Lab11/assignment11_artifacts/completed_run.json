@@ -1,0 +1,10 @@
+{
+  "model": "google/bert_uncased_L-12_H-128_A-2",
+  "revision": "769ccb240a0acd026d94f84a96e8a754e4b8eff1",
+  "seed": 42,
+  "probes": 36,
+  "train_per_task": 45000,
+  "test_per_task": 5000,
+  "results_sha256": "22dc40afa1a342c4b20a5fec6ff1798a628d45cd20889eafc6d090dfcc42d357",
+  "torch": "2.14.1+cpu"
+}

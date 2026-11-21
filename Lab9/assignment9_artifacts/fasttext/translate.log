@@ -1,0 +1,6 @@
+[2026-11-07 19:08:43,338 INFO] Loading checkpoint from c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab9\assignment9_artifacts\fasttext\models\mt_step_8000.pt
+[2026-11-07 19:08:44,237 INFO] Loading data into the model
+c:\Users\Vishal Gautam\Desktop\ILLM Lab\ILLM Assign\Lab8\runtime\python312\Lib\site-packages\onmt\modules\multi_headed_attn.py:656: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at ..\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:263.)
+  attn_output = scaled_dot_product_attention(
+[2026-11-07 19:10:06,227 INFO] PRED SCORE: -10.4763, PRED PPL: 35464.05 NB SENTENCES: 16075
+Time w/o python interpreter load/terminate:  82.92575097084045

@@ -1,0 +1,26 @@
+{
+  "fasttext": {
+    "en": {
+      "covered_training_types": 8797,
+      "explained_variance_ratio": 0.7322564416166527,
+      "projected_sha256": "1350b49080ee4377aa458ea8827e306cb0f7630b94064e4ec0b121699c28cace"
+    },
+    "hi": {
+      "covered_training_types": 10910,
+      "explained_variance_ratio": 0.6797322043997748,
+      "projected_sha256": "d2179407ce26ed1a5c01d66d828a3f4683507bbb1853f0b3055f06c221b34b2c"
+    }
+  },
+  "bpemb": {
+    "en": {
+      "covered_training_types": 9614,
+      "explained_variance_ratio": 0.7456153794298003,
+      "projected_sha256": "9abb09da7a1ab2bff60bd1ecf3bcef339eef479c12b9b8b27785b90052c89721"
+    },
+    "hi": {
+      "covered_training_types": 9535,
+      "explained_variance_ratio": 0.711883703720901,
+      "projected_sha256": "6e49a361c37875917a5d78075a5133fd543228b07962974c85ab5d11958d834c"
+    }
+  }
+}

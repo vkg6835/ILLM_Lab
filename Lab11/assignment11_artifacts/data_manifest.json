@@ -1,0 +1,38 @@
+{
+  "seed": 42,
+  "sources": {
+    "sentence_length": {
+      "url": "https://raw.githubusercontent.com/facebookresearch/SentEval/main/data/probing/sentence_length.txt",
+      "raw_sha256": "72d9a6b83fa9435d9e65caf0e693085b838b35ff59af5c4d2594afdf24c5046f",
+      "raw_rows": 119988,
+      "conflicting_sentences": 0,
+      "unique_consistent_rows": 118904,
+      "split_sha256": {
+        "train": "276275d064e82c01d58bca9776a906fe073bb077ceedba02c43280f85404c471",
+        "test": "0fffc5eea47baa657945912a874830fdff1fd3e4efbe7a77002fa3d39aa8a2ab"
+      }
+    },
+    "bigram_shift": {
+      "url": "https://raw.githubusercontent.com/facebookresearch/SentEval/main/data/probing/bigram_shift.txt",
+      "raw_sha256": "b4f445a27a44c65e0920aa186e86a263a3dc4f26486850309c90e3753d5b9132",
+      "raw_rows": 120000,
+      "conflicting_sentences": 0,
+      "unique_consistent_rows": 119631,
+      "split_sha256": {
+        "train": "d65b3f4d5b8674dd4bbd8fdaa0d1039a2ec9053781d2a163a97b5e378be587e1",
+        "test": "4d8a3d85a184a90a5fb18b599cea458d67a48dafff427ead0620c461eff4caa4"
+      }
+    },
+    "subj_number": {
+      "url": "https://raw.githubusercontent.com/facebookresearch/SentEval/main/data/probing/subj_number.txt",
+      "raw_sha256": "1caa94b5e209ef3c45ef3812b452d85115213cb3ce895f77fd6db867f5e54058",
+      "raw_rows": 120000,
+      "conflicting_sentences": 0,
+      "unique_consistent_rows": 119236,
+      "split_sha256": {
+        "train": "d2f802d45ce587fe05f85bbc5e17f4a155e312caab933e19cae1f8d503e2df12",
+        "test": "d7f21aba8d6360e5de528943510f297145109608fb6115a8d725799a869f2fb5"
+      }
+    }
+  }
+}

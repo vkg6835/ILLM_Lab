@@ -1,0 +1,43 @@
+{
+  "model": "google-bert/bert-base-multilingual-cased",
+  "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+  "seed": 42,
+  "epochs": 1,
+  "max_length": 64,
+  "batch_size": 16,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "data_sha256": {
+    "train": "965f3814074c13a2e8c7e4f085d7fb17e303a301bc0d122498c1316db29d086f",
+    "validation": "b33f2bb22ddc53d454164ede678537f59a6b886ad410f46f749ac1c3138a9f69",
+    "test": "a9738e74f5b5b5bdb2c693b0200b99cec609a69b916a8536b9d72af141a99296"
+  },
+  "labels": {
+    "asm_Beng": 0,
+    "ben_Beng": 1,
+    "brx_Deva": 2,
+    "doi_Deva": 3,
+    "gom_Deva": 4,
+    "guj_Gujr": 5,
+    "hin_Deva": 6,
+    "kan_Knda": 7,
+    "kas_Arab": 8,
+    "mai_Deva": 9,
+    "mal_Mlym": 10,
+    "mar_Deva": 11,
+    "mni_Mtei": 12,
+    "npi_Deva": 13,
+    "ory_Orya": 14,
+    "pan_Guru": 15,
+    "san_Deva": 16,
+    "snd_Deva": 17,
+    "tam_Taml": 18,
+    "tel_Telu": 19,
+    "urd_Arab": 20,
+    "khasi": 21,
+    "santhali": 22
+  },
+  "torch": "2.14.1+cpu",
+  "device": "cpu",
+  "mixed_precision": false
+}

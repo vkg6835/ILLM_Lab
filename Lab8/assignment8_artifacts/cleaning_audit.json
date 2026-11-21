@@ -1,0 +1,11 @@
+{
+  "input_rows": 165650,
+  "header_rows": 1,
+  "malformed_rows": 1,
+  "wrong_language_rows": 0,
+  "empty_rows": 0,
+  "duplicate_pairs": 0,
+  "repeated_sources": 4190,
+  "repeated_targets": 703,
+  "retained_pairs": 160755
+}

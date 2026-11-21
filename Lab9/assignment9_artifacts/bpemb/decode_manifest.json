@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "model_sha256": "1e0940c3b83f71704862e003276cc37fce497a2dda550778427480ba8427da6a",
+    "test_source_sha256": "285ee1c21990e6ed34919b70c85a051fb2563b32d72bdc6a23e00d32edf78d0f",
+    "beam_size": 5,
+    "max_length": 657,
+    "alpha": 0.6
+  },
+  "prediction_sha256": "8d4db3d3725f6944d2e996d2dfdb545b1df231eadc8ff6977c445e548dcd6798"
+}

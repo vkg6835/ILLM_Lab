@@ -1,0 +1,3 @@
+split,sentences,tokens,unique_words,min_length,max_length,mean_length
+train,823,19172,4570,1,63,23.295261239368166
+test,77,1896,744,4,50,24.623376623376622

@@ -1,0 +1,24 @@
+{
+  "src": {
+    "vocab_size": 12008,
+    "pretrained_types": 8797,
+    "training_token_vocabulary_coverage": 0.9329369512887116,
+    "training_token_pretrained_coverage": 0.8327813668327462,
+    "training_unknown_token_rate": 0.06706304871128843,
+    "aligned_shape": [
+      12008,
+      128
+    ]
+  },
+  "tgt": {
+    "vocab_size": 12008,
+    "pretrained_types": 10910,
+    "training_token_vocabulary_coverage": 0.9274488137796555,
+    "training_token_pretrained_coverage": 0.896491171054057,
+    "training_unknown_token_rate": 0.0725511862203445,
+    "aligned_shape": [
+      12008,
+      128
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+t,hypothesis,prefix_probability,conditional_probability,cumulative_probability,retained
+1,cat,1.0,0.5,0.5,True
+1,sat,1.0,0.3,0.3,True
+1,mat,1.0,0.2,0.2,False
+1,</s>,1.0,0.0,0.0,False
+2,cat sat,0.5,0.6,0.3,True
+2,sat mat,0.3,0.7,0.21,True
+2,cat mat,0.5,0.3,0.15,False
+2,sat cat,0.3,0.2,0.06,False
+2,cat </s>,0.5,0.1,0.05,False
+2,sat </s>,0.3,0.1,0.03,False
+2,cat cat,0.5,0.0,0.0,False
+2,sat sat,0.3,0.0,0.0,False
+3,cat sat mat,0.3,0.8,0.24,True
+3,sat mat </s>,0.21,0.9,0.189,True
+3,cat sat </s>,0.3,0.2,0.06,False
+3,sat mat cat,0.21,0.1,0.021,False
+3,cat sat cat,0.3,0.0,0.0,False
+3,cat sat sat,0.3,0.0,0.0,False
+3,sat mat mat,0.21,0.0,0.0,False
+3,sat mat sat,0.21,0.0,0.0,False

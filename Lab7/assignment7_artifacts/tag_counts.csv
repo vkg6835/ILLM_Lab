@@ -1,0 +1,3 @@
+split,B-NP,I-NP,O
+train,5051,5727,8394
+test,475,579,842

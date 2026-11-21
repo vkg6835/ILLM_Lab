@@ -1,0 +1,7 @@
+Corpus corpus_1's weight should be given. We default it to 1 for you.
+[2026-11-05 01:01:18,265 INFO] Counter vocab from -1 samples.
+[2026-11-05 01:01:18,265 INFO] n_sample=-1: Build vocab on full datasets.
+[2026-11-05 01:01:26,272 INFO] Counters src: 3993
+[2026-11-05 01:01:26,272 INFO] Counters tgt: 3995
+[2026-11-05 01:01:26,273 WARNING] path assignment8_artifacts/models/vocab.en.txt exists, may overwrite...
+[2026-11-05 01:01:26,277 WARNING] path assignment8_artifacts/models/vocab.hi.txt exists, may overwrite...

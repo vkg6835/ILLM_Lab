@@ -1,0 +1,306 @@
+sentence_id,error,start,end,text
+1,missed_gold_span,20,21,release
+1,missed_gold_span,21,22,tomorrow
+1,extra_predicted_span,20,22,release tomorrow
+2,missed_gold_span,2,4,the Exchequer
+2,missed_gold_span,21,22,sterling
+2,extra_predicted_span,0,1,Chancellor
+2,extra_predicted_span,2,5,the Exchequer Nigel
+3,missed_gold_span,1,2,analysts
+3,missed_gold_span,3,5,underlying support
+3,missed_gold_span,6,7,sterling
+3,missed_gold_span,11,13,the chancellor
+3,missed_gold_span,22,26,his Mansion House speech
+3,extra_predicted_span,1,5,analysts reckon underlying support
+3,extra_predicted_span,11,12,the
+3,extra_predicted_span,22,25,his Mansion House
+4,missed_gold_span,28,29,economists
+4,missed_gold_span,30,34,foreign exchange market analysts
+4,extra_predicted_span,28,34,economists and foreign exchange market analysts
+5,missed_gold_span,4,5,sterling
+5,missed_gold_span,23,26,senior U.K. economist
+5,extra_predicted_span,23,24,senior
+5,extra_predicted_span,25,26,economist
+6,missed_gold_span,20,22,Simon Briscoe
+6,missed_gold_span,23,25,U.K. economist
+6,extra_predicted_span,19,22,noted Simon Briscoe
+6,extra_predicted_span,24,25,economist
+7,missed_gold_span,2,5,the trade figures
+7,missed_gold_span,21,31,the # 2 billion -LRB- $ 3.2 billion -RRB- deficit
+7,extra_predicted_span,2,7,the trade figures range widely
+7,extra_predicted_span,21,25,the # 2 billion
+7,extra_predicted_span,26,29,$ 3.2 billion
+8,missed_gold_span,4,9,the # 2.2 billion gap
+8,extra_predicted_span,4,10,the # 2.2 billion gap registered
+8,extra_predicted_span,13,15,topped only
+9,missed_gold_span,3,5,European economist
+9,missed_gold_span,17,18,Britain
+9,missed_gold_span,23,24,itself
+9,missed_gold_span,26,27,exports
+9,extra_predicted_span,4,5,economist
+9,extra_predicted_span,22,24,transforming itself
+9,extra_predicted_span,25,27,boost exports
+10,missed_gold_span,5,6,he
+10,missed_gold_span,13,14,imports
+10,missed_gold_span,16,23,continued high consumer and capital goods inflows
+10,extra_predicted_span,5,9,he remains fairly pessimistic
+10,extra_predicted_span,20,23,capital goods inflows
+12,missed_gold_span,23,24,imports
+13,missed_gold_span,2,6,at least some rebound
+13,missed_gold_span,19,25,as little as # 1.3 billion
+13,extra_predicted_span,0,1,Combined
+13,extra_predicted_span,4,6,some rebound
+13,extra_predicted_span,20,21,little
+13,extra_predicted_span,22,25,# 1.3 billion
+14,missed_gold_span,24,25,sterling
+14,missed_gold_span,31,32,much
+14,missed_gold_span,45,46,positions
+14,extra_predicted_span,30,32,advance much
+14,extra_predicted_span,44,46,adjusting positions
+15,missed_gold_span,2,3,he
+15,extra_predicted_span,0,1,Nevertheless
+15,extra_predicted_span,2,4,he noted
+16,missed_gold_span,5,7,the economy
+16,extra_predicted_span,0,1,Meanwhile
+16,extra_predicted_span,5,10,the economy remains fairly clouded
+17,missed_gold_span,6,8,Mr. Lawson
+17,missed_gold_span,10,13,a further slowdown
+17,missed_gold_span,26,29,earlier this month
+17,missed_gold_span,30,31,effect
+17,extra_predicted_span,6,9,Mr. Lawson warned
+17,extra_predicted_span,10,11,a
+17,extra_predicted_span,27,31,this month takes effect
+19,extra_predicted_span,14,15,slowing
+20,missed_gold_span,4,5,spending
+20,extra_predicted_span,3,5,that spending
+22,missed_gold_span,16,17,suggestions
+22,missed_gold_span,18,19,much
+22,extra_predicted_span,12,13,strong
+22,extra_predicted_span,17,19,that much
+23,missed_gold_span,23,26,a substantial slowdown
+23,missed_gold_span,28,29,place
+23,missed_gold_span,31,32,sterling
+23,extra_predicted_span,0,1,Certainly
+23,extra_predicted_span,20,22,both ensure
+23,extra_predicted_span,23,27,a substantial slowdown does
+23,extra_predicted_span,28,30,place and
+23,extra_predicted_span,31,33,sterling does
+23,extra_predicted_span,35,36,further
+24,missed_gold_span,13,16,the necessary rigor
+24,extra_predicted_span,13,14,the
+25,missed_gold_span,4,5,little
+25,missed_gold_span,6,7,sterling
+25,missed_gold_span,9,11,the moment
+25,missed_gold_span,13,15,Mr. Lawson
+25,missed_gold_span,15,17,'s promise
+25,missed_gold_span,18,19,rates
+25,extra_predicted_span,4,8,little holding sterling firm
+25,extra_predicted_span,9,12,the moment other
+25,extra_predicted_span,13,14,Mr.
+25,extra_predicted_span,15,16,'s
+25,extra_predicted_span,17,19,that rates
+25,extra_predicted_span,22,23,higher
+26,missed_gold_span,2,3,they
+26,missed_gold_span,5,8,any further drop
+26,missed_gold_span,16,18,this promise
+26,extra_predicted_span,2,4,they warn
+26,extra_predicted_span,6,8,further drop
+26,extra_predicted_span,16,20,this promise sound hollow
+27,missed_gold_span,10,11,confidence
+27,missed_gold_span,12,14,Mr. Lawson
+27,missed_gold_span,14,16,'s promise
+27,missed_gold_span,16,17,Friday
+27,extra_predicted_span,12,13,Mr.
+27,extra_predicted_span,14,17,'s promise Friday
+29,missed_gold_span,4,6,the pound
+29,missed_gold_span,7,8,much
+29,missed_gold_span,19,20,rates
+29,missed_gold_span,27,30,any further decline
+29,missed_gold_span,36,38,monetary policy
+29,extra_predicted_span,4,8,the pound falls much
+29,extra_predicted_span,18,20,increase rates
+29,extra_predicted_span,24,25,both
+29,extra_predicted_span,28,32,further decline and ensure
+29,extra_predicted_span,36,39,monetary policy remains
+31,missed_gold_span,8,9,concerns
+31,missed_gold_span,10,11,equities
+31,extra_predicted_span,9,12,about equities abated
+32,missed_gold_span,0,3,Foreign exchange dealers
+32,missed_gold_span,12,13,itself
+32,missed_gold_span,29,34,the Dow Jones Industrial Average
+32,missed_gold_span,35,39,more than 190 points
+32,extra_predicted_span,1,3,exchange dealers
+32,extra_predicted_span,11,13,distance itself
+32,extra_predicted_span,29,35,the Dow Jones Industrial Average plunged
+32,extra_predicted_span,37,39,190 points
+33,missed_gold_span,0,2,Currency analysts
+33,missed_gold_span,14,16,its focus
+33,extra_predicted_span,1,3,analysts predict
+33,extra_predicted_span,14,15,its
+34,extra_predicted_span,0,1,Late
+35,missed_gold_span,6,7,hands
+35,extra_predicted_span,5,7,changing hands
+36,missed_gold_span,1,2,Tokyo
+36,missed_gold_span,5,8,the U.S. currency
+36,missed_gold_span,18,21,'s Tokyo close
+36,extra_predicted_span,5,9,the U.S. currency opened
+36,extra_predicted_span,18,20,'s Tokyo
+37,missed_gold_span,8,9,gold
+37,missed_gold_span,10,12,current delivery
+37,missed_gold_span,14,16,$ 367.30
+37,extra_predicted_span,10,13,current delivery settled
+37,extra_predicted_span,14,15,$
+39,missed_gold_span,4,6,Hong Kong
+39,missed_gold_span,6,7,Monday
+39,missed_gold_span,8,9,gold
+39,missed_gold_span,12,14,$ 366.50
+39,extra_predicted_span,4,7,Hong Kong Monday
+39,extra_predicted_span,12,13,$
+40,missed_gold_span,6,7,it
+40,missed_gold_span,10,14,A.P. Green Industries Inc.
+40,missed_gold_span,15,17,$ 40
+40,extra_predicted_span,6,8,it proposed
+40,extra_predicted_span,9,14,acquire A.P. Green Industries Inc.
+40,extra_predicted_span,15,16,$
+41,missed_gold_span,6,8,A.P. Green
+41,extra_predicted_span,26,27,no
+42,missed_gold_span,22,24,satisfactory financing
+42,extra_predicted_span,19,24,contingent upon obtaining satisfactory financing
+44,missed_gold_span,8,12,about $ 106.6 million
+44,extra_predicted_span,9,12,$ 106.6 million
+45,missed_gold_span,4,6,"2,664,098 shares"
+45,extra_predicted_span,4,7,"2,664,098 shares outstanding"
+47,missed_gold_span,3,9,"a Mexico , Mo. , maker"
+47,extra_predicted_span,3,5,a Mexico
+47,extra_predicted_span,6,9,"Mo. , maker"
+49,missed_gold_span,3,8,"233,000 A.P. Green common shares"
+49,missed_gold_span,16,21,$ 35.50 to $ 36.50
+49,extra_predicted_span,2,8,"holds 233,000 A.P. Green common shares"
+49,extra_predicted_span,16,18,$ 35.50
+49,extra_predicted_span,19,20,$
+50,missed_gold_span,0,7,New York-based John Kuhns and Robert MacDonald
+50,missed_gold_span,8,12,East Rock Partners Inc.
+50,extra_predicted_span,0,1,New
+50,extra_predicted_span,2,4,John Kuhns
+50,extra_predicted_span,5,12,Robert MacDonald control East Rock Partners Inc.
+52,missed_gold_span,1,3,Westwood Brick
+52,extra_predicted_span,0,3,Both Westwood Brick
+53,missed_gold_span,11,12,competition
+53,missed_gold_span,14,15,deregulation
+53,missed_gold_span,26,27,inflation
+53,extra_predicted_span,3,4,declining
+53,extra_predicted_span,11,13,competition spurred
+53,extra_predicted_span,20,24,turning upward and threatening
+54,missed_gold_span,0,6,"Trucking , shipping and air-freight companies"
+54,missed_gold_span,8,10,rate increases
+54,extra_predicted_span,0,1,Trucking
+54,extra_predicted_span,2,6,shipping and air-freight companies
+54,extra_predicted_span,7,10,announced rate increases
+55,missed_gold_span,14,15,inflation
+55,extra_predicted_span,14,18,inflation and maybe faster
+56,missed_gold_span,22,23,inflation
+56,extra_predicted_span,21,23,restrain inflation
+56,extra_predicted_span,28,30,competitive abroad
+57,missed_gold_span,1,2,Demand
+57,missed_gold_span,12,14,freight transportation
+57,missed_gold_span,16,17,rates
+57,missed_gold_span,39,41,Clifford Sayre
+57,missed_gold_span,42,43,director
+57,missed_gold_span,44,45,logistics
+57,extra_predicted_span,12,17,"freight transportation , and rates"
+57,extra_predicted_span,18,21,starting to move
+57,extra_predicted_span,31,32,more
+57,extra_predicted_span,39,43,"Clifford Sayre , director"
+58,missed_gold_span,0,1,Shippers
+58,missed_gold_span,10,17,"their freight-transport , storage and distribution costs"
+58,extra_predicted_span,0,2,Shippers surveyed
+58,extra_predicted_span,10,12,their freight-transport
+58,extra_predicted_span,13,17,storage and distribution costs
+59,missed_gold_span,4,7,the 250 shippers
+59,missed_gold_span,27,28,costs
+59,extra_predicted_span,4,8,the 250 shippers polled
+59,extra_predicted_span,26,28,reduce costs
+60,missed_gold_span,15,21,such a dramatic and broad-based upturn
+60,missed_gold_span,39,40,Columbus
+60,extra_predicted_span,16,18,a dramatic
+60,extra_predicted_span,19,21,broad-based upturn
+61,missed_gold_span,7,8,that
+61,missed_gold_span,10,11,1980
+61,missed_gold_span,12,13,shippers
+61,missed_gold_span,16,17,transportation
+61,extra_predicted_span,10,13,1980 enabled shippers
+62,missed_gold_span,3,5,their equipment
+62,missed_gold_span,10,11,overcapacity
+62,extra_predicted_span,3,7,their equipment more efficiently
+63,missed_gold_span,2,6,about $ 35 billion
+63,missed_gold_span,7,15,"their annual , inter-city truck and rail costs"
+63,missed_gold_span,17,21,about $ 150 billion
+63,missed_gold_span,36,37,GNP
+63,missed_gold_span,38,39,1981
+63,extra_predicted_span,2,4,about $
+63,extra_predicted_span,4,6,35 billion
+63,extra_predicted_span,7,9,their annual
+63,extra_predicted_span,10,12,inter-city truck
+63,extra_predicted_span,13,15,rail costs
+63,extra_predicted_span,18,21,$ 150 billion
+64,missed_gold_span,2,3,much
+64,missed_gold_span,4,6,the inefficiency
+64,extra_predicted_span,4,7,the inefficiency squeezed
+64,extra_predicted_span,19,21,reflected directly
+65,missed_gold_span,1,2,Shippers
+65,missed_gold_span,5,7,the party
+65,extra_predicted_span,5,6,the
+65,extra_predicted_span,7,8,'s
+65,extra_predicted_span,10,11,'
+66,missed_gold_span,1,2,Shippers
+66,missed_gold_span,15,21,the last eight or nine years
+66,extra_predicted_span,15,18,the last eight
+66,extra_predicted_span,19,21,nine years
+68,missed_gold_span,6,10,Arthur D. Little Inc.
+68,missed_gold_span,11,12,Cambridge
+68,missed_gold_span,13,14,Mass.
+68,missed_gold_span,20,23,all the benefits
+68,missed_gold_span,24,25,deregulation
+68,extra_predicted_span,7,10,D. Little Inc.
+68,extra_predicted_span,21,23,the benefits
+69,missed_gold_span,10,11,carriers
+69,missed_gold_span,12,13,equipment
+69,missed_gold_span,22,23,labor
+69,extra_predicted_span,10,13,carriers replace equipment
+70,missed_gold_span,0,1,You
+70,missed_gold_span,3,4,carriers
+70,missed_gold_span,9,12,the price cutting
+70,missed_gold_span,12,13,that
+70,extra_predicted_span,0,2,You 'll
+70,extra_predicted_span,9,11,the price
+70,extra_predicted_span,12,14,that occurred
+71,missed_gold_span,0,2,Not everyone
+71,missed_gold_span,10,11,shippers
+71,extra_predicted_span,1,2,everyone
+72,missed_gold_span,7,8,pressure
+72,missed_gold_span,9,10,rates
+72,missed_gold_span,21,22,lecturer
+72,missed_gold_span,23,24,transportation
+72,missed_gold_span,28,29,Technology
+72,extra_predicted_span,2,3,'s
+72,extra_predicted_span,7,10,pressure on rates
+73,missed_gold_span,17,22,a 4.7 % rate increase
+73,missed_gold_span,23,25,last April
+73,extra_predicted_span,17,23,a 4.7 % rate increase implemented
+73,extra_predicted_span,24,25,April
+74,extra_predicted_span,3,5,competing fiercely
+75,missed_gold_span,15,16,freight
+75,missed_gold_span,17,18,trucks
+76,missed_gold_span,7,15,"a Menlo Park , Calif. , less-than-truckload carrier"
+76,extra_predicted_span,7,10,a Menlo Park
+76,extra_predicted_span,11,12,Calif.
+76,extra_predicted_span,13,15,less-than-truckload carrier
+77,missed_gold_span,0,2,Consolidated Freightways
+77,missed_gold_span,5,7,its rates
+77,missed_gold_span,7,9,5.3 %
+77,missed_gold_span,9,12,late this year
+77,missed_gold_span,18,22,at least two competitors
+77,extra_predicted_span,0,3,Consolidated Freightways plans
+77,extra_predicted_span,5,9,its rates 5.3 %
+77,extra_predicted_span,10,12,this year
+77,extra_predicted_span,20,22,two competitors

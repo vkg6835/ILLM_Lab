@@ -1,0 +1,10 @@
+torch>=2.6,<3
+transformers>=4.57,<6
+numpy>=1.26,<3
+pandas>=2.2,<4
+scikit-learn>=1.6,<2
+matplotlib>=3.9,<4
+requests>=2.32,<3
+joblib>=1.4,<2
+ipython>=8
+ipykernel>=6

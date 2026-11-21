@@ -1,0 +1,14 @@
+{
+  "fingerprint": "ac25fa1a38f152fd507e485180f55d651046e8b872132abe4d6d42a6c399a17d",
+  "checkpoints": [
+    "mt_step_1000.pt",
+    "mt_step_2000.pt",
+    "mt_step_3000.pt",
+    "mt_step_4000.pt",
+    "mt_step_5000.pt",
+    "mt_step_6000.pt",
+    "mt_step_7000.pt",
+    "mt_step_8000.pt"
+  ],
+  "training_seconds": 441.8110208999715
+}

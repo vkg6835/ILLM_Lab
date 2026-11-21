@@ -1,0 +1,12 @@
+{
+  "src": {
+    "tokens": 3638005,
+    "coverage": 1.0,
+    "vocab_size": 4000
+  },
+  "tgt": {
+    "tokens": 3985528,
+    "coverage": 1.0,
+    "vocab_size": 4000
+  }
+}

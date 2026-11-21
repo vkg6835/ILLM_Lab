@@ -1,0 +1,9 @@
+{
+  "variants": [
+    "fasttext",
+    "bpemb"
+  ],
+  "train_steps": 8000,
+  "test_sentences": 16075,
+  "scores_sha256": "9e085386844b930c0512a7e14dfc669408b1c9f79017a2b1670ec75eff4b3271"
+}

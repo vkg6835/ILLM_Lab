@@ -1,0 +1,11 @@
+variant,bin,sentences,BLEU,brevity_penalty,hypothesis_tokens,reference_tokens,length_ratio,signature
+fasttext,bin1,3232,8.856464711610286,1.0,34401,31595,1.088811520810255,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0
+fasttext,bin2,6729,7.015652428030195,1.0,138666,117615,1.1789822726693024,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0
+fasttext,bin3,4165,5.754262655408366,1.0,143531,113847,1.2607358999358789,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0
+fasttext,bin4,1949,5.352504289012597,1.0,115933,84231,1.376369745105721,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0
+fasttext,overall,16075,6.262596088273977,1.0,432531,347288,1.2454533413190205,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0
+bpemb,bin1,3232,8.393107385907832,0.8779116956021448,27955,31595,0.8847918974521285,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0
+bpemb,bin2,6729,6.457127197556288,0.910503746353616,107533,117615,0.9142796412022276,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0
+bpemb,bin3,4165,5.86779667103484,0.8976566346326458,102753,113847,0.9025534269677725,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0
+bpemb,bin4,1949,5.912600966544964,0.9413221405151516,79428,84231,0.9429782384157852,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0
+bpemb,overall,16075,6.275561792141172,0.9109761522355446,317669,347288,0.9147134366865541,nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0

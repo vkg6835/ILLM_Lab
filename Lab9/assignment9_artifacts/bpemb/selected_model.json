@@ -1,0 +1,6 @@
+{
+  "step": 8000,
+  "validation_perplexity": 114.211,
+  "sha256": "1e0940c3b83f71704862e003276cc37fce497a2dda550778427480ba8427da6a",
+  "selection": "lowest validation perplexity; test not used"
+}

@@ -1,0 +1,8 @@
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+seqeval==1.2.2
+ipython>=8
+ipykernel>=6.29
+nbformat>=5.10
+nbclient>=0.10

@@ -1,0 +1,57 @@
+data:
+  corpus_1:
+    path_src: assignment8_artifacts/data/train.bpe.en
+    path_tgt: assignment8_artifacts/data/train.bpe.hi
+  valid:
+    path_src: assignment8_artifacts/data/validation.bpe.en
+    path_tgt: assignment8_artifacts/data/validation.bpe.hi
+save_data: assignment8_artifacts/data/onmt
+src_vocab: assignment8_artifacts/models/vocab.en.txt
+tgt_vocab: assignment8_artifacts/models/vocab.hi.txt
+src_vocab_size: 4004
+tgt_vocab_size: 4004
+src_words_min_frequency: 1
+tgt_words_min_frequency: 1
+share_vocab: false
+overwrite: true
+n_sample: 0
+save_model: assignment8_artifacts/models/mt
+log_file: assignment8_artifacts/onmt_training.log
+encoder_type: transformer
+decoder_type: transformer
+enc_layers: 2
+dec_layers: 2
+hidden_size: 128
+word_vec_size: 128
+transformer_ff: 512
+heads: 4
+position_encoding: true
+dropout:
+- 0.1
+attention_dropout:
+- 0.1
+param_init: 0
+param_init_glorot: true
+optim: adam
+adam_beta1: 0.9
+adam_beta2: 0.998
+learning_rate: 2.0
+decay_method: noam
+warmup_steps: 500
+max_grad_norm: 0
+label_smoothing: 0.1
+batch_type: tokens
+batch_size: 1024
+valid_batch_size: 1024
+bucket_size: 2048
+num_workers: 0
+accum_count:
+- 1
+train_steps: 5000
+valid_steps: 500
+save_checkpoint_steps: 500
+keep_checkpoint: -1
+early_stopping: 0
+report_every: 100
+seed: 42
+world_size: 1

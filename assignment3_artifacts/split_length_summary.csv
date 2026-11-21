@@ -1,0 +1,4 @@
+split,sentences,min,mean,median,max
+train,1000000,5,89.976635,77.0,5117
+development,1000,12,90.436,77.5,667
+test,1000,10,90.289,77.5,628
