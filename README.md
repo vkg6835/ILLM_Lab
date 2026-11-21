@@ -1,6 +1,6 @@
 # ILLM Lab Assignments
 
-Coursework by **Vishal Gautam (U23AI127)**, B.Tech Artificial Intelligence, SVNIT Surat.
+**Vishal Gautam (U23AI127)**, B.Tech Artificial Intelligence, SVNIT Surat.
 
 This repository contains the executed notebooks for assignments 1 through 11,
 assignment PDFs, Python scripts where available, requirements, reports, tables,
